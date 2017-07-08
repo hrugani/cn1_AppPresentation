@@ -7,8 +7,8 @@
 
 ## How to run this project
 
-1) Install Netbeans IDE for Java EE aplications (It is free)
-   (https://netbeans.org/downloads)
+1) Install Netbeans IDE for Java EE aplications (It is free)  
+   (https://netbeans.org/downloads)  
    Standard installation accepting all default installer suggestions
 
 2) Install Codename one plugin 

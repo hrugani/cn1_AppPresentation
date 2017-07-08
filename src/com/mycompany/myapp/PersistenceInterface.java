@@ -27,7 +27,7 @@ import java.util.Collection;
  *
  * One method "getNextId" was added only for delegating ID generation
  * for new objects. In this way the persistence layer can decide
-  * to use a strategy that fits better in each case.  
+ * to use a strategy that fits better in each case.  
  * 
  */
 public interface PersistenceInterface {

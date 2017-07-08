@@ -4,8 +4,11 @@
 
 -This application creates a Waze integrated customer registry.
 
+## How to run this project on Android device
+1) Download the apk from this address:  
+   
 
-## How to run this project
+## How to run this project using its code
 
 1) Install Netbeans IDE for Java EE aplications (It is free).  
    (https://netbeans.org/downloads)  

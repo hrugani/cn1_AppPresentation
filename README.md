@@ -7,14 +7,15 @@
 
 ## How to run this project
 
-1) Install Netbeans IDE for Java EE aplications (It is free)  
+1) Install Netbeans IDE for Java EE aplications (It is free).  
    (https://netbeans.org/downloads)  
-   Standard installation accepting all default installer suggestions
+   Standard installation accepting all default installer suggestions.
 
-2) Install Codename one plugin 
-   You can do this using the Netbeans plugin central itself.
+2) Install Codename one plugin  
+   You can do this using the Netbeans plugin central itself.  
    Menu option Tools/plugins (tab: Available Plugins) 
-   
+     
+     
 3) Clone this project in your machine (git clone ) 
    
 4) Open the project in NetBeans and press play button to run it.

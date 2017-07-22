@@ -156,7 +156,21 @@ public class Client implements Externalizable, Comparable<Client> {
     
     }
 
-   
-    
+    /**
+     *
+     * @param c
+     * @return
+     */
+    public boolean equals(Client c) {        
+        return 
+            this.getAge() == c.getAge()
+            && this.getId() == c.getId()
+            && this.getGeoLocation().equals(c.getGeoLocation())   
+            && (this.getName() == null ?
+                  c.getName() == null
+                     :
+                  this.getName().equals(c.getName())
+                );
+    }
     
 }

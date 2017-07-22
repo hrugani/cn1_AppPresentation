@@ -35,6 +35,16 @@ public class PersistenceMem implements PersistenceInterface {
     public Collection<Client> getClients() {
         return map.values();
     }
+
+    @Override
+    public Client getClient(int id) {
+        for (Client c : map.values()) {
+            if (c.getId() == id) {
+                return c;
+            }
+        }
+        return null;
+    }
     
     @Override
     public Client addClient(Client c) {
@@ -61,6 +71,6 @@ public class PersistenceMem implements PersistenceInterface {
         }
         return max+1;
     }
-    
+
     
 }

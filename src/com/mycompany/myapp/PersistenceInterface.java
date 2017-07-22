@@ -35,6 +35,8 @@ public interface PersistenceInterface {
     Client addClient(Client c);
 
     Collection<Client> getClients();
+    
+    Client getClient(int id);
 
     Client removeClient(Client c);
 

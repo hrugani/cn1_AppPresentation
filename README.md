@@ -25,12 +25,12 @@
    (git clone ) 
    
 4) Open the project in NetBeans and press play button to run it.  
-   The sumulator will open quickly and   
-   you can operate all app funtionalities using the Simulator.  
+   The simulator will open quickly and   
+   you can operate all app functionalities using the Simulator.  
    You don't need any SDK (Xcode, Android SDK .... no one of them)  
    installed in your dev machine.  
-   Codename one plugin offers you all tools for code, run and debug your app with its own simulator.  
-   Even you want generate the app package to install in physical devices (iOS devices, androide devices, etc)  
-   you can do that using codename one cloud builder.  
-   The codename one plugin add several options in Netbeans project properties that allows you build   
-   packages for all platforms (Android , iOS, Windows UWP, ....)
+   Codename one plugin offers you all tools for code, run, debug and test your
+   app with its own simulator.  
+   Even you want generate the app package to install in physical devices 
+   (iOS devices, androide devices, etc) you can do that
+   using codename one cloud builder.  

@@ -48,9 +48,22 @@ public class PersistenceSto implements PersistenceInterface {
     }
     
     @Override
+    public Client getClient(int id) {
+        for (String entry : sto.listEntries()) {
+            if (entry.startsWith(CLIENT_KEY_PREFIX)) {
+                Client c = (Client) sto.readObject(entry);
+                if (c.getId() == id) {
+                    return c;
+                }
+            }
+        }
+        return null;
+    }
+
+    @Override
     public Client addClient(Client c) {
-        sto.writeObject(createKey(c), c);
-        return c;
+        boolean b = sto.writeObject(createKey(c), c);
+        return (b)? c : null;
     }
 
     @Override
@@ -61,8 +74,8 @@ public class PersistenceSto implements PersistenceInterface {
     
     @Override
     public Client updateClient(Client c) {
-        sto.writeObject(createKey(c), c);
-        return c;
+        boolean b = sto.writeObject(createKey(c), c);
+        return (b)? c : null;
     }
 
     @Override

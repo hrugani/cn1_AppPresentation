@@ -5,7 +5,8 @@
 -This application creates a Waze integrated customer registry.
 
 ## How to run this project on Android device
-1) Download the apk from this address:  
+1) Download the apk from this address:
+   [CN1_Presentation.apk](https://drive.google.com/file/d/0B7gXS5FCEqrRVFExcGZydE1Fb1k/view?usp=sharing) 
    
 
 ## How to run this project using its code

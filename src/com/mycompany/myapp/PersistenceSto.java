@@ -19,16 +19,10 @@ public class PersistenceSto implements PersistenceInterface {
 
     Storage sto;
     
-    static private PersistenceSto p = new PersistenceSto();
-
-    private PersistenceSto() {
+    public PersistenceSto() {
         this.sto = Storage.getInstance();
     }
    
-    public static PersistenceSto getInstance() {
-        return p;
-    }
-    
     final private String CLIENT_KEY_PREFIX = "Client_"; 
     private String createKey(Client c) {
         return CLIENT_KEY_PREFIX + c.getId();

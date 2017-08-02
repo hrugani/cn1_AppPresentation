@@ -32,7 +32,13 @@ import java.util.Collection;
  */
 public class MyFormClients extends Form {
     
-    PersistenceInterface p = PersistenceSto.getInstance();
+    // Liskov Substitution Principle
+    // choose the persistence behavior
+    // Simply, you instantiate the class that
+    // implements persistence type you want.
+    // PersistenceMem Class saves data in memory.
+    // PersistenceSto Class saves data in device local storage.
+    PersistenceInterface p = new PersistenceSto();
     
     Container cCenter = new Container();
     
@@ -153,12 +159,25 @@ public class MyFormClients extends Form {
             });
             return txt;
         }
+        
+        public boolean isInteger(String s) {
+            try { 
+                Integer.parseInt(s); 
+            } catch(NumberFormatException | NullPointerException e) { 
+                return false; 
+            }
+            // only got here if we didn't return false
+            return true;
+        }        
 
         private TextField createTxtAge(Client c) {
             final TextField txt = new TextField("" + c.getAge());
             txt.addDataChangeListener((int type, int index) -> {
                 mb.setTextLine2(txt.getText());
-                c.setAge(Integer.parseInt(txt.getText()));
+                String text = txt.getText();
+                if (isInteger(text)) {
+                    c.setAge(Integer.parseInt(txt.getText()));
+                }
             });
             txt.setConstraint(TextField.NUMERIC);
             return txt;

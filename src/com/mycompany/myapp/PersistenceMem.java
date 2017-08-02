@@ -16,9 +16,7 @@ public class PersistenceMem implements PersistenceInterface {
     
     HashMap<Integer,Client> map;
     
-    static private PersistenceMem p = new PersistenceMem();
-
-    private PersistenceMem() {        
+    public PersistenceMem() {        
         this.map = new HashMap<>();
         map.put(1, new Client(1,"Hélio", 56, Client.GEO_HOME));
         map.put(2, new Client(2,"Caio", 30, Client.GEO_WORK));
@@ -26,11 +24,6 @@ public class PersistenceMem implements PersistenceInterface {
         map.put(4, new Client(4,"Natalia", 28, Client.GEO_7COMM));
     }
    
-    public static PersistenceMem getInstance() {
-        return p;
-    }
-    
-    
     @Override
     public Collection<Client> getClients() {
         return map.values();

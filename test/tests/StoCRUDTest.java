@@ -35,7 +35,7 @@ public class StoCRUDTest extends AbstractTest {
     
     @Override
     public void prepare() {
-        p = PersistenceSto.getInstance();
+        p = new PersistenceSto();
     }
     
     @Override
